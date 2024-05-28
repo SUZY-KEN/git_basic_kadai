@@ -1,0 +1,48 @@
+suzy-ken@DESKTOP-TMICUDC MINGW64 ~
+$ cd /g/マイドライブ/samurai
+
+suzy-ken@DESKTOP-TMICUDC MINGW64 /g/マイドライブ/samurai
+$ mkdir git_challenge
+
+suzy-ken@DESKTOP-TMICUDC MINGW64 /g/マイドライブ/samurai
+$ cd git_challenge
+
+suzy-ken@DESKTOP-TMICUDC MINGW64 /g/マイドライブ/samurai/git_challenge
+$ touch hello_world.txt
+
+suzy-ken@DESKTOP-TMICUDC MINGW64 /g/マイドライブ/samurai/git_challenge
+$ git init
+Initialized empty Git repository in G:/マイドライブ/samurai/git_challenge/.git/
+
+suzy-ken@DESKTOP-TMICUDC MINGW64 /g/マイドライブ/samurai/git_challenge (master)
+$ git branch -m master main
+
+suzy-ken@DESKTOP-TMICUDC MINGW64 /g/マイドライブ/samurai/git_challenge (main)
+$ git add hello_world.txt
+
+suzy-ken@DESKTOP-TMICUDC MINGW64 /g/マイドライブ/samurai/git_challenge (main)
+$ git commit -m"hello_world.txtの追加"
+[main (root-commit) 8c4f267] hello_world.txtの追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+suzy-ken@DESKTOP-TMICUDC MINGW64 /g/マイドライブ/samurai/git_challenge (main)
+$ git add git_challenge.txt
+fatal: pathspec 'git_challenge.txt' did not match any files
+
+suzy-ken@DESKTOP-TMICUDC MINGW64 /g/マイドライブ/samurai/git_challenge (main)
+$ git add hello_world.txt
+
+suzy-ken@DESKTOP-TMICUDC MINGW64 /g/マイドライブ/samurai/git_challenge (main)
+$ git commit -m"日本語訳を追記"
+[main 659a490] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+suzy-ken@DESKTOP-TMICUDC MINGW64 /g/マイドライブ/samurai/git_challenge (main)
+$ git log --oneline
+659a490 (HEAD -> main) 日本語訳を追記
+8c4f267 hello_world.txtの追加
+
+suzy-ken@DESKTOP-TMICUDC MINGW64 /g/マイドライブ/samurai/git_challenge (main)
+$
+
